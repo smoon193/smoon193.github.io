@@ -1,0 +1,81 @@
+%!PS-Adobe-3.0
+%%Creator: Rhinoceros
+%%Title: (slotted square test.ai)
+%%BoundingBox: -1 -1 86 86
+%%DocumentProcessColors: Black
+%%DocumentNeededResources: procset Adobe_packedarray 2.0 0
+%%+ procset Adobe_cmykcolor 1.1 0
+%%+ procset Adobe_cshow 1.1 0
+%%+ procset Adobe_customcolor 1.0 0
+%%+ procset Adobe_typography_AI3 1.0 0
+%%+ procset Adobe_IllustratorA_AI3 1.0 0
+%AI3_ColorUsage: Color
+%AI3_TemplateBox: 288 384 288 384
+%AI3_TileBox: 0 0 576 768
+%AI3_DocumentPreview: None
+%%Template:
+%%PageOrigin:0 0
+%%EndComments
+%%BeginProlog
+%%IncludeResource: procset Adobe_packedarray 2.0 0
+Adobe_packedarray /initialize get exec
+%%IncludeResource: procset Adobe_cmykcolor 1.1 0
+%%IncludeResource: procset Adobe_cshow 1.1 0
+%%IncludeResource: procset Adobe_customcolor 1.0 0
+%%IncludeResource: procset Adobe_typography_AI3 1.0 0
+%%IncludeResource: procset Adobe_IllustratorA_AI3 1.0 0
+%%EndProlog
+%%BeginSetup
+Adobe_cmykcolor /initialize get exec
+Adobe_cshow /initialize get exec
+Adobe_customcolor /initialize get exec
+Adobe_typography_AI3 /initialize get exec
+Adobe_IllustratorA_AI3 /initialize get exec
+%%EndSetup
+%AI5_BeginLayer
+1 1 1 1 0 0 -1 0 0 0 Lb
+(Default) Ln
+0 A
+0 R
+1.0000 1.0000 1.0000 1.0000 K
+1.0000 1.0000 1.0000 1.0000 k
+0 i 1 J 1 j 1.0000 w 4 M []0 d
+0 D
+56.6929 0.0000 m
+59.5276 0.0000 L
+59.5276 28.3465 L
+56.6929 28.3465 L
+56.6929 0.0000 L
+s
+1.0000 1.0000 1.0000 1.0000 K
+1.0000 1.0000 1.0000 1.0000 k
+0 i 1 J 1 j 1.0000 w 4 M []0 d
+0 D
+0.0000 0.0000 m
+85.0394 0.0000 L
+85.0394 85.0394 L
+0.0000 85.0394 L
+0.0000 0.0000 L
+s
+1.0000 1.0000 1.0000 1.0000 K
+1.0000 1.0000 1.0000 1.0000 k
+0 i 1 J 1 j 1.0000 w 4 M []0 d
+0 D
+0.0000 56.6929 m
+28.3465 56.6929 L
+28.3465 59.5276 L
+0.0000 59.5276 L
+0.0000 56.6929 L
+s
+LB
+%AI5_EndLayer--
+%%PageTrailer
+gsave annotatepage grestore showpage
+%%Trailer
+Adobe_IllustratorA_AI3 /terminate get exec
+Adobe_typography_AI3 /terminate get exec
+Adobe_customcolor /terminate get exec
+Adobe_cshow /terminate get exec
+Adobe_cmykcolor /terminate get exec
+Adobe_packedarray /terminate get exec
+%%EOF

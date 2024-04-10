@@ -9,10 +9,78 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Example Student's Assignment 2!</h1>
+    <h1>assignment 2</h1>
     <div class="header">
-      <img src="red-panda.jpg" />
-      <p>Here is all the documentation for assignment 2!</p>
+      <video width="400" controls autoplay>
+        <source src="assignment2\IMG_6945.mov" type="video/mp4">
+      </video>
+      <p style="font-style: italic;">Create a parametric model using a Grasshopper definition. The pieces should be able to clip together. Provide parameters to vary material thickness and other properties in your Grasshopper definition.</p>
+    </div>
+    <div>
+      <p>
+        <br>
+        <p style="font-weight: bold;">Sketching</p>
+        Sketching was a lot tougher for this assignment because I was trying to think in terms of shapes that could fit together to form a surface. Professor Nadya said we didn't really need to make a whole lamp shape like we tried in class, but I was interested to try something closer to that type of interlock vs. just slotting together like in the first assignment.
+        I couldn't think of any cute shapes that could interlock like that, so I resolved to keep it simple and try to get started in Rhino since I'd be learning that for the first time after using Cuttle last week.
+        <img src="assignment2\IMG_6978.jpg"/>
+      </p>
+      <p>
+        <br>
+        <p style="font-weight: bold;">Prototyping</p>
+        My prototyping attempt this week was pretty pathetic &#128514;
+        I was trying to come up with the simplest shape I could that might still notch together to form a surface with a semi-bendy material.
+        <img src="assignment2\IMG_6927.jpg"/>
+      </p>
+      <p>
+        <br>
+        <p style="font-weight: bold;">Modeling</p>
+        This section is where you're going to start regretting giving me a free-form write-up prompt &#128514;
+        <br><br>
+        As soon as I opened up Rhino my mind went completely blank. Everything we went over during the walkthrough on Wednesday evaporated from my mind. 
+        I tried to draw and resize a square, a simple wholesome shape, a family shape, and I was immediately flummoxed. I tried to resize it by dragging the corner as usual, but only the one corner moved. What could be the sense in that?! Did Rhino not know what a square was?!?? 
+        I started panicking because if I couldn't figure out how to draw a mere square then I'd never be able to complete the assignment and then I'd get an F in the class and have to drop out and change my name and put on a false mustache and flee the country.
+        I went home and texted flo with news of my defeat and hoped that if I came back to the lab the following day there might at least be more people there I could ask for some help.
+        <br><br>
+        The next day flo and Eva and Celina were at the lab too so that was a relief! For the first couple hours I mostly just sat there clicking back and forth between the lamest Rhino/Grasshopper model ever, and countless tutorial videos that had absolutely nothing to do with what I needed.
+        I tried drawing a simple shape in Rhino to start with and then seeing if I could scale parts of it in Grasshopper. 
+        I tried about a million different variations of the Scale Non-Uniform component, the rectangle component, and anything else that seemed like it might possibly make the little slots bigger or smaller in any dimension, but nothing I did in Grasshopper was changing the shapes in Rhino.
+        <div class="grid">
+          <img src="assignment2\Screenshot 2024-04-08 191255.png"/>
+          <img src="assignment2\Screenshot 2024-04-08 191226.png"/>
+        </div>
+        <br><br>
+        At this point the abject terror was setting in. I was finding it impossible to scale a rectangle and I was somehow supposed to scale all these weird sort of disconnected other bits of shapes?!?!?
+        My classmates tried to help but I guess I had done something weird and/or I was just so far behind where they were in their projects that we couldn't make much sense of it.
+        Every tutorial video I tried to watch was either too basic, too advanced, or totally irrelevant. 
+        <div class="grid">
+          <img src="assignment2\Screenshot 2024-04-08 192522.png"/>
+          <img src="assignment2\Screenshot 2024-04-08 192547.png"/>
+        </div>
+        <br>
+        My most-used resource of the week &#129315;&#129315;&#129315;&#129315;
+        <img src="assignment2\Screenshot 2024-04-09 212632.png"/>
+        <br>
+        I abandoned all hope of having a cool project or even a vaguely surface-like project. I checked the assignment again and it seemed like the important part was to make things adjustable by parameters.
+        So I figured if I could get a few rectangles to scale and move, I could at least make a sort of notched tile that could be modified in a number of ways.
+        As long as the slots were adjustable in width, that could account for different thicknesses of material, right? ...Right?!??! &#128560;
+        The slots have no relation to the main rectangle so they can be "adjusted" clean off the tile, but who am I to tell an enterprising young engineer what to do with their model?! 
+        I grant any future manufacturers of this notched tile the agency to manufacture a tile that doesn't work at all. It's an interactive performance art piece about free will and human nature!!
+        <br><br>
+        Proof that it works when the Grasshopper definition is baked at 30x30mm, with 1x10mm slots for this particular scrap of cardboard!
+        <div class="grid">
+          <img src="assignment2\IMG_6946.jpg"/>
+          <img src="assignment2\IMG_6947.jpg"/>
+          <img src="assignment2\IMG_6949.jpg"/>
+          <video width="400" controls autoplay>
+            <source src="assignment2\IMG_6950.mov" type="video/mp4">
+          </video>
+        </div>
+        <br><br>
+        Please click the photograph of deflating Squidward below to download my Grasshopper definition:
+        <a href="https://drive.google.com/file/d/16ucddLU99zLfVZMuuFLFC9qt5Sc1to5x/view?usp=sharing" download>
+          <img src="/assignment2/deflating_squidward.jpg" alt="Link to download my Grasshopper definition!">
+        </a>
+      </p>
     </div>
   </body>
 </html>
