@@ -11,7 +11,7 @@
   <body>
     <h1>assignment 4</h1>
     <div class="header">
-      <img src="assignment1\IMG_6767.jpg" />
+      <img src="assignment4\mystery_box.png" />
       <p style="font-style: italic;">
         Option 2: Design and 3D print a box that press-fits together tightly enough to hold sugar.
       </p>
@@ -19,30 +19,73 @@
     <div>
       <p>
         <br><br>
-        I read through the slides and watched a few woodworking videos about different types of joins and decided to just wing it 
-        and try out a couple tiny panels with box joints to get a baseline to see what I'd need to adjust.
+        <p style="font-weight: bold;">Research</p>
+        Since I knew I would be missing last week's class, I started this assignment by reading through the slides, watching a few woodworking videos about various types of joins,
+        and even found this fancy chart about interference fits for dowels? (from https://www.fictiv.com/articles/too-tight-or-perfect-fit-when-to-use-press-fits-in-your-assemblies)
+        <img src="assignment4\interference_fit_table.png" />
+        
+        ...And ultimately decided to just wing it and try out a couple tiny panels with box joints to get a baseline to see what I'd need to adjust.
+        <img src="assignment4\test_panels.png"/>
+        <br>
         <p style="font-weight: bold;">Attempt 1</p>
           For my first attempt, I wanted to see what would happen if I just asked the printer to make panels with the same size of fingers 
           as grooves (4mm each). I was curious how close the flexibility of the material and the error of the printer would get me to a working box joint.
 
+          <br>
+          <img src="assignment4\attempt1.png"/>
           The joints would not fit together at all, but they seemed pretty close. I measured each of the fingers to see how accurate the print was.
 
+          <br><br>
           For the piece with 3 fingers, I measured each of them at about 4.06mm. I remembered the slides had some suggestions for what to start adjusting 
           if your print was precise but not accurate, but then when I measured the piece with two fingers, I got measurements between 3.98mm and 4.06mm, 
           which seemed like a pretty wide range relative to the difference one of the woodworking videos said there should be between groove and finger.
           This also threw off any potential adjustments I was thinking of making since it was no longer simply a problem of the whole print being off by 
           the same amount consistently.
 
+          <br><br>
           <p style="font-weight: bold;">Attempt 2</p>
+          For my next attempt, I tried the same test panel shape, but with 3.9mm pegs, still separated by 4mm slots. After they 
+          printed, the actual measurements of the pegs were 3.98mm, 3.94mm, and 3.89mm on the 3-peg side, and 3.91mm and 3.90mm on 
+          the 2-peg side.
+          <br><br>
+          This time the panels fit together comfortably, but not snugly enough to hold together.
+          <video width="400" controls autoplay>
+            <source src="assignment4\IMG_7085.mov" type="video/mp4">
+          </video>
 
+          <br><br>
           <p style="font-weight: bold;">Attempt 3</p>
+          At this point I was getting a little worried that with this much error in the prints, I wouldn't be able to get the 
+          actual measurements accurate enough to achieve joints that fit together consistently across the box. 
+          But since I had one attempt that was too snug, and one attempt that was too loose, I thought it would be worth 
+          one more shot with 3.95mm pegs. I also tried setting Prusa Slicer from the "speed" to the "structural" setting.
 
-          <p style="font-weight: bold;">4cm test</p>
-          bye i put one of the fingers down only 3 mm instead of 4
+          <br>
+          <img src="assignment4\attempt3.png"/>
+          These ones held together!!! This was enough for me to try kicking off a larger test with box joints on all sides so that I could 
+          theoretically make a box. I couldn't quite figure out how the top and bottom would fit together with the sides, but I 
+          just printed two panels with 3 slots on top and 3 grooves on bottom and figured if those worked, I could print two more 
+          and then maybe it would be more obvious what shape I'd need for the top and bottom once I put those together.
 
-          I was also struggling so much to put the puzzle together and wasn't sure if that was because it wouldnt fit together on certain 
-          sides cuz I made it wrong or if it wouldn't have fit together right either way. I fixed the finger placement and decided to print only 4 of the same one 
-          and if that worked out I could try printing special top and bottom pieces to fit into whatever edges resulted from the 4 pieces fit together
+          <br><br>
+          <p style="font-weight: bold;">4cm Test</p>
+          Once the first two full-size panels came out, I tried to fit them together but they weren't working. Did the prints have too 
+          much error?? Did I design them wrong so that they'd have weird corners or something??? Was I just too dumb to put the 
+          puzzle together?!?
+          <img src="assignment4\full_size_test.png"/>
+          After fiddling with it for an embarrassing amount of time, I finally realized the problem... In my model I 
+          hadn't noticed that I had spaced out one of the pegs by only 3mm instead of 4 &#128565;&#128565;&#128565;&#128565;
+          <img src="assignment4\mistake.png"/>
+
+          <br><br>
+          I fixed the offending joint and as of about 10pm on the 15th, I kicked off 4 of these and was hoping I would have one more chance before class to run to the lab and 
+          check how they came out and maybe even print a top and bottom piece. 
+          <img src="assignment4\fixed.png"/>
+          
+          <br><br>
+          However as of 1:14pm on the 24th, the final box is still a mystery~~
+          <br><br>
+          Stay tuned to find out if I can ditch work in time to go figure out the last pieces before class!!
       </p>
     </div>
   </body>
