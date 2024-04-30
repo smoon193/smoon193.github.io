@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>sarah's hcde 533 digital fabrication page</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>assignment 5</h1>
+    <div class="header">
+      <img src="assignment5\Screenshot 2024-04-28 152246.png" />
+      <p style="font-style: italic;">
+        Modify the mesh of two STLs to produce a single printable STL, and make a start on a lamp.
+      </p>
+    </div>
+    <div>
+      <p>
+        <br><br>
+        <p style="font-weight: bold;">Part 1</p>
+        I checked out Thingi10K to start my search for nice meshes that I could smush together. I found this lovely bust of Sappho, 
+        and a little statue of an equally profound and culturally influential figure: GIR from Invader Zim.
+        <div class="grid">
+          <img src="assignment5\Screenshot 2024-04-29 223234.png"/>
+          <img src="assignment5\Screenshot 2024-04-29 223314.png"/>
+        </div>
+        
+        <br>
+        I imported both into Rhino and tried to reduce the mesh of Sappho since she was a bit unwieldy. Then I attempted to follow a 
+        similar procedure to the beheading we witnessed in class last Wednesday. I put GIR's body in a box and Boolean-differenced it 
+        away. At first I thought if I could just make the head a little bigger, then I could probably just fit Sappho's head inside 
+        it, and Boolean union the two to make my GIR bust. However, when I tried this, a piece of Sappho's bun was left sticking out 
+        and I got a message about non-manifold edges or something like that. I tried to run a few of the repair commands, but didn't 
+        have much luck.
+        
+        <br><br>
+        I undid a few things and took off as much of Sappho's head as I could manage to create a nice platform to place GIR's head 
+        onto the bust. This time I got a different error about "degenerate faces." I'm guessing areas like this would be problematic, 
+        where the curved part of GIR's neck meets the flat plane of Sappho's cut off head? 
+        <img src="assignment5\Screenshot 2024-04-28 152246.png"/>
+
+        <br><br>
+        After some googling and failed attempts at repairing, I remembered a command Nathan had pointed out during his office hours, 
+        Shrink Wrap. I thought I'd see if that would smooth out these weird rough areas and thankfully it did!! It somehow looks even 
+        crazier all weirdly smoothed out, but important art is often misunderstood during its time and Rhino said it was a good mesh 
+        and that is the only art critic whose opinion I care about!!
+        <img src="assignment5\Screenshot 2024-04-28 152156.png"/>
+
+
+        <br>
+        <p style="font-weight: bold;">Part 2</p>
+          As soon as I saw the Loft command in the first Rhino demo, I was like yeeeeeaahh that's the one. I just thought it created 
+          really cool organic shapes! So that was the first thing I started trying out in Rhino.
+          <img src="assignment5\Screenshot 2024-04-29 213621.png"/>
+          
+          <br>
+          Making the loft was easy, so then I started to think about the important stuff like how to get it to certain dimensions and 
+          how it would affix to the lamp. I flipped through a few designs on Thingiverse to get some inspiration for attachment 
+          mechanisms and lightbulb interactions I could apply to the type of design I was going for. 
+          <div class="grid">
+            <img src="assignment5\Screenshot 2024-04-29 213936.png"/>
+            <img src="assignment5\Screenshot 2024-04-29 214016.png"/>
+          </div>
+
+          <br>
+          In my first attempt of a rough Rhino model, I actually thought it looked cooler with just the grid lines on vs. shaded, 
+          so I was interested in the white lamp type of design where maybe I could make a slotted disk at the top, and print out 
+          some sort of wavy organic panels to fit into it. However, Professor Nadya did specifically mention the stark lack of appeal 
+          of a naked lightbulb, so I also started thinking about other options for covering it, like the diffuser someone made as 
+          an add-on for the cellular lamp we had looked at in class. 
+
+          <br>
+          <img src="assignment5\Screenshot 2024-04-29 221040.png"/>
+          
+          <br><br>
+          <p style="font-weight: bold;">Lab Time</p>
+          I headed into the lab to try to catch Nathan for his office hours and hopefully start printing some experiments. 
+          I pitched my still rather nebulous design idea (some sort of lofted shape? maybe a closed loft so it had an inside 
+          layer? or maybe like a wireframe of a loft?) to Nathan and he gave me some considerations to think about:
+          <br> 
+          - size constraints of the 3D printer (if I wanted it bigger maybe I could do multiple pieces and conjoin them? with 
+          box joints/dovetails? or maybe two circular pieces could screw together?)
+          <br>
+          - the Pipe command as a possibility for the wireframe idea
+          <br>
+          - the biggest thing we were running into when I tried to put my Rhino model into Prusa Slicer to start printing some tests 
+          was that in vase mode, you're even more limited as to how much you can angle your structure than normal, which Nathan 
+          said the limit was about 45 degrees (pls see my notes page where I wrote 45% for some reason &#128128;) we talked about 
+          different ways I could possibly add thickness to the shell (but then I wouldn't be able to use vase mode) or other types 
+          of attaching pieces that might help (like a slotted disk that slips around the wire to increase the diameter of the circle the 
+          loft has to end in)
+          <img src="assignment5\Screenshot 2024-04-29 221136.png"/>
+
+          <br>
+          I figured since I was already at the lab I should at least try to print SOMETHING even though most of my ideas seemed to 
+          be dead ends. I thought I could at least get a baseline and see if whatever problems it had were fixable. After playing 
+          around with the model and slicer a bunch, I had landed on some mini version of my lamp which even at a small scale was 
+          looking pretty holey and unpromising.
+          <img src="assignment5\Screenshot 2024-04-27 181210.png"/>
+
+          <br>
+          Okay so I must have messed up the scaling between multiple iterations back and forth from Rhino to Prusa Slicer and it came 
+          out even more mini than I was expecting &#128514; And it was still super holey at the top, even though I had finagled it 
+          to have a double layered shell. Nathan pointed out that any hole problems I was having at this scale would only be worse 
+          at full size, soooooooooo idk. That's where I left off for now. Wondering if I should be leaning more into the wireframe + diffuser idea, unless I want to 
+          abandon the shape I had in mind for a loft and do something as near-cylidrical as possible, and then just come up with some way 
+          to hang that off the lamp. IDK!!!!! TBD!!!!
+          <img src="assignment5\Screenshot 2024-04-29 221102.png"/>
+
+      </p>
+    </div>
+  </body>
+</html>
